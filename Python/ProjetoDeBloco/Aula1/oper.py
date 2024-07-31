@@ -1,0 +1,7 @@
+print(8 + 1)
+print(8 - 1)
+print(8 * 1)
+print(8 / 1)
+print(8 // 1)
+print(8 % 1)
+print(8 ** 1)
