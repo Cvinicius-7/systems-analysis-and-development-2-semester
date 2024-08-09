@@ -1,3 +1,3 @@
-nome_da_variavel = 256
+nome_da_variavel = float("256")
 
 print(type(nome_da_variavel))
