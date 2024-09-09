@@ -17,6 +17,10 @@ window.configure(bg=gray)
 
 #Criando o frame
 window_frame = Frame(window, width=300, height=70,)
-window_frame.grid(row=0, column=0)
+window_frame.grid(row=0, column=0,)
+
+#Segundo frame
+window_frame2 = Frame(window, width=300, height=330,)
+window_frame2.grid(row=1, column=0,)
 
 window.mainloop()
