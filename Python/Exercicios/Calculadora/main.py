@@ -16,7 +16,7 @@ window.geometry("300x400")
 window.configure(bg=gray)
 
 #Criando o frame
-window_frame = Frame(window, width=300, height=70,)
+window_frame = Frame(window, width=300, height=70, bg=gray)
 window_frame.grid(row=0, column=0,)
 
 #Segundo frame
