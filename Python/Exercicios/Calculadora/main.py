@@ -2,6 +2,7 @@
 from tkinter import *
 from tkinter import ttk
 
+
 #Definindo cores
 gray = "#4b524d"; #cinza
 white = "#ffffff"; #branco
@@ -22,6 +23,11 @@ window_frame.grid(row=0, column=0,);
 #Segundo frame
 window_frame2 = Frame(window, width=300, height=420);
 window_frame2.grid(row=1, column=0,);
+
+#Criando label
+label = Label(window_frame, text="123456789", bg=gray, font=("ivy 20 bold"), width=16, height=2, padx=7, anchor=E, relief= FLAT, fg=white, justify=RIGHT);
+label.place(x=0, y=0);
+ 
 
 #botões
 but1 = Button(window_frame2, text="C", width=14, height=3, bg=white, font=("ivy 13 bold"), relief=RAISED, overrelief=RIDGE);
