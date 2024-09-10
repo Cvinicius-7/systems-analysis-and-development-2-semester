@@ -33,41 +33,41 @@ label.place(x=0, y=0);
 #botões
 but1 = Button(window_frame2, command= lambda: clear(),text="C", width=14, height=3, bg=white, font=("ivy 13 bold"), relief=RAISED, overrelief=RIDGE);
 but1.place(x=0, y=0);
-but2 = Button(window_frame2, command= lambda: input("%"), text="%", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but2 = Button(window_frame2, command= lambda: append_to_expression("%"), text="%", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but2.place(x=146, y=0);
-but3 = Button(window_frame2, command= lambda: input("/"),text="/", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
+but3 = Button(window_frame2, command= lambda: append_to_expression("/"),text="/", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
 but3.place(x=219, y=0);
 
-but4 = Button(window_frame2, command= lambda: input("7"),text="7", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but4 = Button(window_frame2, command= lambda: append_to_expression("7"),text="7", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but4.place(x=0, y=70);
-but5 = Button(window_frame2, command= lambda: input("8"),text="8", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but5 = Button(window_frame2, command= lambda: append_to_expression("8"),text="8", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but5.place(x=73, y=70);
-but6 = Button(window_frame2, command= lambda: input("9"),text="9", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but6 = Button(window_frame2, command= lambda: append_to_expression("9"),text="9", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but6.place(x=146, y=70);
-but7 = Button(window_frame2, command= lambda: input("*"),text="*", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
+but7 = Button(window_frame2, command= lambda: append_to_expression("*"),text="*", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
 but7.place(x=219, y=70);
 
-but8 = Button(window_frame2, command= lambda: input("4"),text="4", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but8 = Button(window_frame2, command= lambda: append_to_expression("4"),text="4", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but8.place(x=0, y=140);
-but9 = Button(window_frame2, command= lambda: input("5"),text="5", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but9 = Button(window_frame2, command= lambda: append_to_expression("5"),text="5", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but9.place(x=73, y=140);
-but10 = Button(window_frame2, command= lambda: input("6"),text="6", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but10 = Button(window_frame2, command= lambda: append_to_expression("6"),text="6", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but10.place(x=146, y=140);
-but11 = Button(window_frame2, command= lambda: input("-"),text="-", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
+but11 = Button(window_frame2, command= lambda: append_to_expression("-"),text="-", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
 but11.place(x=219, y=140);
 
-but12 = Button(window_frame2, command= lambda: input("1"),text="1", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but12 = Button(window_frame2, command= lambda: append_to_expression("1"),text="1", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but12.place(x=0, y=210);
-but13 = Button(window_frame2, command= lambda: input("2"),text="2", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but13 = Button(window_frame2, command= lambda: append_to_expression("2"),text="2", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but13.place(x=73, y=210);
-but14 = Button(window_frame2, command= lambda: input("3"),text="3", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but14 = Button(window_frame2, command= lambda: append_to_expression("3"),text="3", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but14.place(x=146, y=210);
-but15 = Button(window_frame2, command= lambda: input("+"),text="+", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
+but15 = Button(window_frame2, command= lambda: append_to_expression("+"),text="+", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
 but15.place(x=219, y=210);
 
-but16 = Button(window_frame2, command= lambda: input("0"),text="0", width=16, height=3, bg=white, font=("ivy 13"), relief=RAISED, overrelief=RIDGE);
+but16 = Button(window_frame2, command= lambda: append_to_expression("0"),text="0", width=16, height=3, bg=white, font=("ivy 13"), relief=RAISED, overrelief=RIDGE);
 but16.place(x=0, y=280);
-but17 = Button(window_frame2, command= lambda: input("."),text=".", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
+but17 = Button(window_frame2, command= lambda: append_to_expression("."),text=".", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but17.place(x=146, y=280);
 but18 = Button(window_frame2, command= lambda: calc(),text="=", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
 but18.place(x=219, y=280);
@@ -79,7 +79,7 @@ all_values = "";
 
 
 #criando função input, que recebe o evento e adiciona o valor ao all_values e seta o valor no label 
-def input(event):
+def append_to_expression(event):
     
     global all_values;
     
@@ -89,12 +89,15 @@ def input(event):
 #definindo fuçnção calcular que calcula a expressão matematica
     
 def calc():
-    global all_values;
-    
-    answer = eval(all_values);
-    
-    text_val.set(str(answer));
-    
+    global all_values
+    try:
+        answer = eval(all_values)
+        text_val.set(str(answer))
+        all_values = str(answer)  # Atualiza a expressão com o resultado para continuidade
+    except Exception as e:
+        text_val.set("Erro")
+        all_values = ""
+        
 #definindo função clear que limpa a tela
 
 def clear():
