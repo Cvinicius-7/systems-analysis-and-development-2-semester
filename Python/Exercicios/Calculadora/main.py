@@ -31,7 +31,7 @@ label.place(x=0, y=0);
  
 
 #botões
-but1 = Button(window_frame2, text="C", width=14, height=3, bg=white, font=("ivy 13 bold"), relief=RAISED, overrelief=RIDGE);
+but1 = Button(window_frame2, command= lambda: clear(),text="C", width=14, height=3, bg=white, font=("ivy 13 bold"), relief=RAISED, overrelief=RIDGE);
 but1.place(x=0, y=0);
 but2 = Button(window_frame2, command= lambda: input("%"), text="%", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but2.place(x=146, y=0);
@@ -69,13 +69,13 @@ but16 = Button(window_frame2, command= lambda: input("0"),text="0", width=16, he
 but16.place(x=0, y=280);
 but17 = Button(window_frame2, command= lambda: input("."),text=".", width=7, height=3, bg=white, font=("ivy 13 "), relief=RAISED, overrelief=RIDGE);
 but17.place(x=146, y=280);
-but18 = Button(window_frame2, command= lambda: input("="),text="=", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
+but18 = Button(window_frame2, command= lambda: calc(),text="=", width=7, height=3, bg=orange, font=("ivy 13 "),fg = white, relief=RAISED, overrelief=RIDGE);
 but18.place(x=219, y=280);
 
 #logica
 
 #criando variavel all_values que recebe os valores digitados pelo usuario
-all_values = ""
+all_values = "";
 
 
 #criando função input, que recebe o evento e adiciona o valor ao all_values e seta o valor no label 
@@ -83,11 +83,24 @@ def input(event):
     
     global all_values
     
-    all_values = all_values + str(event)
+    all_values = all_values + str(event);
+    text_val.set(all_values);
     
-    text_val.set(all_values)
+#definindo fuçnção calcular que calcula a expressão matematica
     
+def calc():
+    global all_values;
+    
+    answer = eval(all_values);
+    print(answer);
+    
+#definindo função clear que limpa a tela
 
-
+def clear():
+    
+    global all_values;
+    
+    all_values = "";
+    text_val.set("");
      
 window.mainloop()
