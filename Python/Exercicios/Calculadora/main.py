@@ -81,7 +81,7 @@ all_values = "";
 #criando função input, que recebe o evento e adiciona o valor ao all_values e seta o valor no label 
 def input(event):
     
-    global all_values
+    global all_values;
     
     all_values = all_values + str(event);
     text_val.set(all_values);
@@ -92,7 +92,8 @@ def calc():
     global all_values;
     
     answer = eval(all_values);
-    print(answer);
+    
+    text_val.set(str(answer));
     
 #definindo função clear que limpa a tela
 
