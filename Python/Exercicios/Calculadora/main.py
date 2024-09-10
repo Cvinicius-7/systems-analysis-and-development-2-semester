@@ -74,7 +74,7 @@ but18.place(x=219, y=280);
 
 #logica
 
-#criando variavel
+#criando variavel all_values que recebe os valores digitados pelo usuario
 all_values = ""
 
 
