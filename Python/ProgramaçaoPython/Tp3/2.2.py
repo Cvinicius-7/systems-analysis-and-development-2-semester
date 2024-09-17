@@ -80,4 +80,4 @@ while data == "" or len(data) != 10:
     
     
 #output
-print("Sua data por extenso é: "data_por_extenso(data))
+print("Sua data por extenso é: ", data_por_extenso(data))
